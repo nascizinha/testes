@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Website</title>
+    <meta name="description" content="A minimal, responsive example website." />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap" id="page">
+        <header>
+            <a class="brand" href="#">
+                <div class="logo">A</div>
+                <div>
+                    <div style="font-weight:700">Ametthystty</div>
+                    <div style="font-size:12px;color:var(--muted)">simple demo site</div>
+                </div>
+            </a>
+            <nav>
+                <div class="nav-links" aria-label="Main navigation">
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="actions">
+                    <button id="themeToggle" title="Toggle theme">Toggle theme</button>
+                    <a href="#getstarted" style="text-decoration:none"><button class="ghost">Get started</button></a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" aria-labelledby="hero-title">
+                <div style="flex:1">
+                    <h1 id="hero-title">A clean, responsive starter</h1>
+                    <p>Small, accessible structure you can copy and extend. Built with semantic HTML, minimal CSS and a tiny bit of JS.</p>
+                    <p style="margin-top:12px">
+                        <a href="#getstarted" style="text-decoration:none"><button>Get started</button></a>
+                    </p>
+                </div>
+                <div style="width:220px;text-align:center;font-size:12px;color:var(--muted)">
+                    <div style="background:linear-gradient(90deg,var(--accent),#8b5cf6);color:white;padding:12px;border-radius:10px;">
+                        Ready to use
+                    </div>
+                    <div style="margin-top:10px">Lightweight. Responsive. Accessible.</div>
+                </div>
+            </section>
+
+            <section id="features">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+                    <h2 style="margin:0">Features</h2>
+                    <div style="color:var(--muted);font-size:13px">Simple building blocks</div>
+                </div>
+                <div class="grid" role="list">
+                    <article class="card" role="listitem">
+                        <h3>Semantic HTML</h3>
+                        <p>Structure based on modern HTML elements for better accessibility and SEO.</p>
+                    </article>
+                    <article class="card" role="listitem">
+                        <h3>Responsive layout</h3>
+                        <p>Grid and flexible components that adapt to phones, tablets and desktops.</p>
+                    </article>
+                    <article class="card" role="listitem">
+                        <h3>Small footprint</h3>
+                        <p>All styles embedded in a single file to make copying and forking easy.</p>
+                    </article>
+                    <article class="card" role="listitem">
+                        <h3>Customizable</h3>
+                        <p>Colors, spacing and elements are easy to tweak to match your brand.</p>
+                    </article>
+                    <article class="card" role="listitem">
+                        <h3>Accessible</h3>
+                        <p>Focusable controls, readable contrast and semantic structure.</p>
+                    </article>
+                    <article class="card" role="listitem">
+                        <h3>Starter-ready</h3>
+                        <p>Drop into a project or use as a template to iterate quickly.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about" style="margin-top:8px">
+                <div class="card">
+                    <h3>About this demo</h3>
+                    <p>This file is a self-contained example (HTML, CSS, small JS). Use it as a base for prototypes, landing pages or component experiments.</p>
+                </div>
+            </section>
+
+            <section id="contact" style="margin-top:8px">
+                <div class="card">
+                    <h3>Contact</h3>
+                    <p>Try editing this file and refresh the browser. Add forms, images or components as needed.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>© <span id="year"></span> Ametthystty · Built with a single HTML file</div>
+        </footer>
+    </div>
+
+    <script src="funtion.js"></script>
+</body>
+</html>
